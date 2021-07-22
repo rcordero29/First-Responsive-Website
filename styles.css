@@ -1,3 +1,78 @@
-body{
-  color: brown;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(122, 122, 122);
+}
+
+h1 {
+  color: rgb(253, 253, 253);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  font-size: 60px;
+  height: 100%;
+  width: auto;
+}
+header {
+  height: 40%;
+  background-color: rgb(56, 163, 165);
+}
+.bottom {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(3, 1fr);
+  height: 50%;
+  background-color: rgb(122, 122, 122);
+  grid-gap: 90px;
+  padding: 30px;
+}
+.bottom > div {
+  border: rgb(0, 0, 0) 2px solid;
+  text-align: center;
+  justify-content: space-evenly;
+  display: grid;
+  align-self: start;
+  font-size: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-items: center;
+  align-content: space-around;
+}
+
+.bottom > div > h1 {
+  color: rgb(216, 216, 216);
+  text-align: center;
+  align-items: center;
+  font-size: 90px;
+}
+.color {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 90px;
+  padding: 30px;
+}
+
+#blue {
+  background-color: rgb(25, 32, 126);
+}
+#green {
+  background-color: rgb(29, 129, 29);
+}
+#red {
+  background-color: rgb(156, 27, 27);
+}
+
+@media (min-width: 567px) {
+  .bottom {font-size: 25px;}
+  }
+
