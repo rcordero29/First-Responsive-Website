@@ -11,6 +11,7 @@ body {
 h1 {
   color: rgb(253, 253, 253);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 90px;
 }
 
 .top {
@@ -49,30 +50,37 @@ header {
 }
 
 .bottom > div > h1 {
-  color: rgb(216, 216, 216);
+  color: rgb(255, 255, 255);
   text-align: center;
   align-items: center;
   font-size: 90px;
 }
-.color {
-  display: grid;
-  grid-template-rows: 100px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 90px;
-  padding: 30px;
-}
 
 #blue {
-  background-color: rgb(25, 32, 126);
+  border-top: rgb(10, 69, 117) solid 70px;
 }
+
 #green {
-  background-color: rgb(29, 129, 29);
+  border-top: rgb(5, 100, 26) solid 70px;
 }
+
 #red {
-  background-color: rgb(156, 27, 27);
+  border-top: rgb(107, 8, 8) solid 70px;
 }
 
-@media (min-width: 567px) {
-  .bottom {font-size: 25px;}
+@media (max-width: 992px) {
+  .bottom {
+    display: flex;
+    flex-direction: row;
   }
+}
 
+/* @media (min-width: 576px) {
+  .top {
+    text-align: center;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+} */
