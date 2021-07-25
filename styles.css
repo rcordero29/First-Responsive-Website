@@ -21,7 +21,7 @@ h1 {
   height: inherit;
   font-size: 60px;
   height: 100%;
-  width: auto;
+  width: 100vw;
 }
 header {
   height: 40%;
@@ -68,14 +68,14 @@ header {
   border-top: rgb(107, 8, 8) solid 70px;
 }
 
-@media (max-width: 992px) {
+/* @media (min-width: 992px) {
   .bottom {
     display: flex;
     flex-direction: row;
   }
-}
+} */
 
-/* @media (min-width: 576px) {
+@media (max-width: 576px) {
   .top {
     text-align: center;
   }
@@ -83,4 +83,4 @@ header {
     display: flex;
     flex-direction: column;
   }
-} */
+}
